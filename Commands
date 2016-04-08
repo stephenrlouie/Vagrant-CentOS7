@@ -1,0 +1,16 @@
+Commands for Virtual CentOS7 deployment
+
+To start firewalld
+
+sudo yum install python-pip -y 
+sudo pip install decorator
+systemctl start firewalld.service
+
+To Update the hostname
+
+sudo hostnamectl set-hostname gem-master01
+
+To Get the correct IP
+
+sub: ansible_default_ipv4.address -> ansible_enp0s8.ipv4.address
+
